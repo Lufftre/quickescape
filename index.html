@@ -1,7 +1,7 @@
 <head>
-		<title>Quick Escape</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<style>
+	<title>Quick Escape</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
 		body {
 			background-color: black;
 			margin: -2px;
@@ -20,7 +20,7 @@
 			/* top: 50%; */
 			/* width: 16.6%; */
 			margin-top: 100%;
-		
+
 		}
 		table {
 			width: 100%;
@@ -51,42 +51,32 @@
 			transform: rotate(20deg);
 			
 		}
-		
-		</style>
-		<meta http-equiv="content-type" content="text/html" charset="ISO-8859-1"/>
-		<link href=favicon.png rel="shortcut icon" />
-		</head>
-		<body>
-		<img id="ola" src="ola1.png" />
-		<table>
+	</style>
+	<meta http-equiv="content-type" content="text/html" charset="ISO-8859-1"/>
+	<link href=favicon.png rel="shortcut icon" />
+</head>
+<body>
+	<img id="ola" src="ola1.png" />
+	<table>
 		<tr>
-			
 			<td style="background-color: #e62117;"><a href="https://youtube.com"><div><img src="youtube.png"></div></a></td>
 			<td style="background-color: #3b5998;"><a href="https://facebook.com"><div><img src="facebook.png"></div></a></td>
 			<td style="background-color: #f93f40;"><a href="https://reddit.com"><div><img id="reddit" src="reddit.png" onclick="this.src='reddit-2.png'"></div></a></td>
 			<td style="background-color: #006699;"><a href="https://www3.student.liu.se/portal"><div><img src="liu.png"></div></a></td>
 			<td style="background-color: #d64937;"><a href="https://gmail.com"><div><img src="gmail.png"></div></a></td>
-		   
-			<!-- <td style="background-color: #e62117;" onclick="this.style.display='none'"><a href="#"><div><img src="youtube.png"></div></a></td>
-			<td style="background-color: #3b5998;" onclick="this.style.display='none'"><a href="#"><div><img src="facebook.png"></div></a></td>
-			<td style="background-color: #f93f40;" onclick="this.style.display='none'"><a href="#"><div><img id="reddit" src="reddit.png" ></div></a></td>
-			<td style="background-color: #006699;" onclick="this.style.display='none'"><a href="#"><div><img src="liu.png"></div></a></td>
-			<td style="background-color: #d64937;" onclick="this.style.display='none'"><a href="#"><div><img src="gmail.png"></div></a></td>
-			<td id="ola" style="background-color: #2e2a2a;"><a href="http://piratepad.net/abola"><div><img id="tejp" src="tejp.png"></div></a></td> -->
 		</tr>
-		
-		</table>
-	
-		<script>
-				$( document ).on( "mousemove", function( event ) {
-					var img = $('<img class="tejp" src="tejp.png">');
-					img.prependTo('body');
-					img.animate({ 
-						top: -50 + event.pageY + 'px',
-						left: -70 + event.pageX + 'px',
-					}, 300 );
-					$("#ola").attr("src", "ola2.png")
-				});
-		</script>
-		</body>
+	</table>
+
+	<script>
+		$( document ).on( "mousemove", function( event ) {
+			var img = $('<img class="tejp" src="tejp.png" onclick="javascript:location.href=\'https://www.ida.liu.se/~TDDD89/material/Grading_rubric_TDDD89_2017.pdf\'">');
+			img.prependTo('body');
+			img.animate({ 
+				top: -50 + event.pageY + 'px',
+				left: -70 + event.pageX + 'px',
+			}, 300 );
+			$("#ola").attr("src", "ola2.png")
+		});
+	</script>
+</body>
 		
